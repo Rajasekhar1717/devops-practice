@@ -26,9 +26,9 @@ jobs:
 
       - name: Run SonarQube Scan
         env:
-          SONAR_TOKEN: ${{ secrets.GitHub_SonarQube_Integration }}
+          SONAR_TOKEN: ${{ secrets.SonarQube_Integration }}
         run: |
           mvn clean verify sonar:sonar \
             -Dsonar.projectKey=devops-practice \
             -Dsonar.host.url=http://localhost:9000 \
-            -Dsonar.login=$GitHub_SonarQube_Integration
+            -Dsonar.login=$SonarQube_Integration
