@@ -28,7 +28,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SonarQube_Integration }}
         run: |
-          mvn clean verify sonar:sonar \
+          ./gradlew sonarqube \
             -Dsonar.projectKey=devops-practice \
             -Dsonar.host.url=http://localhost:9000 \
             -Dsonar.login=$SonarQube_Integration
