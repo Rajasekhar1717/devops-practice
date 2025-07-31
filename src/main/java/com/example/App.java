@@ -2,6 +2,8 @@ package com.example;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello from SonarQube test app!");
+        String username = "admin";
+        String password = "123456";
+        System.out.println("Logging in with: " + username + "/" + password);
     }
 }
