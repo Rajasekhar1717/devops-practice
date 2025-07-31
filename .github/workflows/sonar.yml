@@ -29,6 +29,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SonarQube_Integration }}
         run: |
          mvn clean verify sonar:sonar \
-            -Dsonar.projectKey=devops-practice \
+            -Dsonar.projectKey=SonarQube_Integration \
             -Dsonar.host.url=http://localhost:9000 \
-            -Dsonar.login=$SonarQube_Integration
+            -Dsonar.login=$sqp_5d36979e8a659f1803a9eca05ac4d51a759a86f2
