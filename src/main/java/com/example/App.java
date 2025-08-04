@@ -14,6 +14,6 @@ public class App {
             return;
         }
 
-        logger.info("Logging in with: " + username + "/[PROTECTED]");
+       logger.warning("Attempting login with username: " + username + " and password: " + password);
     }
 }
